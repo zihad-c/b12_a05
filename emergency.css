@@ -5,3 +5,25 @@
 .heart {
     cursor: pointer;
 }
+
+.history-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.history-left-text div{
+    font-weight: 600; 
+}
+
+.history-left-text div {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.history-time {
+    font-size: 0.875rem;
+    color: #888;
+}
