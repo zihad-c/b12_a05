@@ -43,14 +43,14 @@
             <div
                 class="flex justify-center items-center w-32 h-14 rounded-[50px] text-[#FFFFFF] font-semibold bg-[#00A63E] px-9 py-3">
 
-                <button id="copy-btn"><span>2 </span> Copy</button>
+                <button id="copy-btn" class="cursor-pointer"><span>2 </span> Copy</button>
             </div>
         </div>
     </nav>
 
     <!-- banner section starts here -->
     <section id="banner"
-        class="w-full h-[239px] py-3 px-[60px] bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] font-[hind-madurai] flex flex-col gap-3 justify-center items-center text-[#ffffff]">
+        class="w-full h-60 py-5 px-[60px] bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] font-[hind-madurai] flex flex-col gap-3 justify-center items-center text-[#ffffff]">
         <div class="div">
             <img src="./assets/logo.png" alt="logo" class="w-[92px] h-[92px]">
         </div>
@@ -69,7 +69,7 @@
 
     <!-- service layout starts here -->
 
-    <section class="bg-[#41FF6B1A] w-full h-[1613px] pt-12 pb-20 px-14 flex gap-7 flex-row">
+    <section class="bg-[#41FF6B1A] w-full max-h-max pt-12 pb-20 px-14 flex gap-7 flex-row">
         <div id="service-layout" class="w-3/4 h-[1140px] ">
             <div id="service-cards" class="w-full grid gap-7 grid-cols-3">
                 <!-- service card 1 -->
@@ -90,25 +90,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">National Emergency Number</h3>
-                        <p class="text-left text-lg font-normal">National Emergency</p>
+                        <h3 class="text-left text-lg service-title font-normal">National Emergency Number</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">National Emergency</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">999</h3>
-                        <p class="text-left text-xl font-normal">All</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal ">
+                            All</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -131,25 +134,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Police Helpline Number</h3>
-                        <p class="text-left text-lg font-normal">Police</p>
+                        <h3 class="text-left text-lg service-title font-normal">Police Helpline Number</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Police</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">999</h3>
-                        <p class="text-left text-xl font-normal">Police</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            Police</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -172,25 +178,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Fire Service Number</h3>
-                        <p class="text-left text-lg font-normal">Fire Service</p>
+                        <h3 class="text-left text-lg service-title font-normal">Fire Service Number</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Fire Service</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">999</h3>
-                        <p class="text-left text-xl font-normal">Fire</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            Fire</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -213,25 +222,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Ambulance Service</h3>
-                        <p class="text-left text-lg font-normal">Ambulance</p>
+                        <h3 class="text-left text-lg service-title font-normal">Ambulance Service</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Ambulance</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">1994-999999</h3>
-                        <p class="text-left text-xl font-normal">Health</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            Health</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -254,25 +266,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Women & Child Helpline</h3>
-                        <p class="text-left text-lg font-normal">Women & Child Helpline</p>
+                        <h3 class="text-left text-lg service-title font-normal">Women & Child Helpline</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Women & Child Helpline</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">109</h3>
-                        <p class="text-left text-xl font-normal">Help</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            Help</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base  cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -295,25 +310,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Anti-Corruption Helpline</h3>
-                        <p class="text-left text-lg font-normal">Anti-Corruption</p>
+                        <h3 class="text-left text-lg service-title font-normal">Anti-Corruption Helpline</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Anti-Corruption</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">106</h3>
-                        <p class="text-left text-xl font-normal">Govt.</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            Govt.</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -336,25 +354,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Electricity Helpline</h3>
-                        <p class="text-left text-lg font-normal">Electricity Outage</p>
+                        <h3 class="text-left text-lg service-title font-normal">Electricity Helpline</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Electricity Outage</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">16216</h3>
-                        <p class="text-left text-xl font-normal">Electricity</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            Electricity</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -377,25 +398,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Brac Helpline</h3>
-                        <p class="text-left text-lg font-normal">Brac</p>
+                        <h3 class="text-left text-lg service-title font-normal">Brac Helpline</h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Brac</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">16445</h3>
-                        <p class="text-left text-xl font-normal">NGO</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            NGO</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -418,25 +442,28 @@
                     </div>
                     <!-- service-card bottom section  -->
                     <div class="w-full mb-6">
-                        <h3 class="text-left text-xl font-normal">Bangladesh Railway Helpline </h3>
-                        <p class="text-left text-lg font-normal">Bangladesh Railway</p>
+                        <h3 class="text-left text-lg service-title font-normal">Bangladesh Railway Helpline </h3>
+                        <p class="text-left service-subtitle text-lg font-normal">Bangladesh Railway</p>
                     </div>
                     <div class="w-full mb-6">
                         <h3 class="text-left text-2xl font-normal">163</h3>
-                        <p class="text-left text-xl font-normal">Travel</p>
+                        <p
+                            class="category inline-block px-[16px] py-[6px] bg-[#F2F2F2] rounded-[9999px] text-left text-xl font-normal">
+                            Travel</p>
                     </div>
                     <!-- card buttons -->
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn" class="px-4 py-2  h-auto bg-white text-base">
-                                <i class="fa-regular fa-copy"></i>Copy
+                            <button type="button" id="copy-btn"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto ">
-                                <i class="fa-solid fa-phone text-base"></i> Call
+                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
@@ -445,11 +472,21 @@
         </div>
 
         <!-- call history part starts here  -->
-        <div id="history" class="w-1/4 border-2 ">
-
+        <div id="history"
+            class="w-1/4 h-[1140px] flex flex-col justify-between p-6 bg-white rounded-xl shadow-[#00020300] font-roboto text-xl font-medium">
+            <div class="history-card flex flex-row justify-between items-center w-full h-[52px] ">
+                <div class="history-left ">
+                    <i class="fa-regular fa-clock"></i> <span id="call-history" class="text-xl">Call History</span>
+                </div>
+                <div class="history-right rounded-[50px] text-center bg-[#00a63e]">
+                    <button id="clear-btn"
+                        class="text-white text-center px-9 py-3 text-base cursor-pointer">Clear</button>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- font-awesome kit script here  -->
     <script src="https://kit.fontawesome.com/760cffbb4d.js" crossorigin="anonymous"></script>
 </body>
 
