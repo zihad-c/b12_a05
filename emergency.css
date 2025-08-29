@@ -1,0 +1,7 @@
+.active-heart {
+    color: red !important;
+}
+
+.heart {
+    cursor: pointer;
+}

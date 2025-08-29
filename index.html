@@ -11,15 +11,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./emergency.css">
 </head>
 
 <body>
     <!-- navigation bar starts -->
-    <nav id="nav" class="flex w-full justify-between items-center px-6 py-4 bg-rgba(255, 255, 255, 1)">
+    <nav id="nav" class="flex w-full justify-between items-center px-6 py-4 bg-rgba(255, 255, 255, 1) sticky top-0">
         <div class="left flex gap-2 w-1/2 items-center">
             <div class="logo">
                 <img src="./assets/logo.png" alt="logo" class="img-fluid w-[50px] h-[50px]">
@@ -32,18 +34,18 @@
         <div class="right w-1/2 flex gap-5 justify-end items-center font-[inter] text-base">
             <div
                 class="flex gap-2.5 justify-center items-center w-32 h-14 rounded-[50px] text-[#000000] font-black bg-[#41FF6B1A] px-3 py-3">
-                <h5 id="heart-icon-text">0</h5>
+                <span id="heart-icon-text">0</span>
                 <img src="./assets/heart.png" alt="heart icon" class="w-[30px] h-[30px]">
             </div>
             <div
                 class="flex gap-2.5 justify-center items-center w-32 h-14 rounded-[50px] text-[#000000] font-black bg-[#41FF6B1A] px-5 py-3">
-                <h5 id="coin-icon-text">100</h5>
+                <span id="coin-icon-text">100</span>
                 <img src="./assets/coin.png" alt="coin icon" class="w-[24px] h-[24px]">
             </div>
             <div
                 class="flex justify-center items-center w-32 h-14 rounded-[50px] text-[#FFFFFF] font-semibold bg-[#00A63E] px-9 py-3">
 
-                <button id="copy-btn" class="cursor-pointer"><span>2 </span> Copy</button>
+                <button id="copy-btn" class="cursor-pointer"><span id="copy-count">2 </span> Copy</button>
             </div>
         </div>
     </nav>
@@ -84,7 +86,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -103,14 +105,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button" class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -128,7 +130,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -147,14 +149,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button"  class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -172,7 +174,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -191,14 +193,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button" 
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button"  class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -216,7 +218,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -235,14 +237,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button" 
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button"  class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -260,7 +262,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -279,14 +281,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button" 
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base  cursor-pointer">
+                            <button type="button"  class="px-4 py-2 h-auto text-base  cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -304,7 +306,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -323,14 +325,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button" 
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button"  class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -348,7 +350,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i  class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -367,14 +369,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button" 
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button" class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -392,7 +394,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -411,14 +413,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button" 
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button"  class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -436,7 +438,7 @@
                         </div>
                         <!-- heart icon  -->
                         <div class="flex justify-end items-center">
-                            <i id="heart" class="heart fa-regular fa-heart w-6 h-6"> </i>
+                            <i class="heart fa-regular fa-heart w-6 h-6"> </i>
                         </div>
 
                     </div>
@@ -455,14 +457,14 @@
                     <div class="rounded-xl flex flex-row gap-1.5 justify-between items-center w-full">
                         <div
                             class="text-[#5C5C5C] text-center items-center rounded-lg border-[1px] border-[#D4D6D5] w-1/2 justify-center">
-                            <button type="button" id="copy-btn"
-                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer">
+                            <button type="button"
+                                class="px-4 py-2  h-auto bg-white text-base cursor-pointer copy-btn">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
                         </div>
                         <div
                             class="text-white bg-[#00A63E] text-center items-center rounded-lg border-[1px] border-[#00A63E] w-1/2">
-                            <button type="button" id="call-btn" class="px-4 py-2 h-auto text-base cursor-pointer">
+                            <button type="button" class="px-4 py-2 h-auto text-base cursor-pointer call-btn">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -488,6 +490,8 @@
 
     <!-- font-awesome kit script here  -->
     <script src="https://kit.fontawesome.com/760cffbb4d.js" crossorigin="anonymous"></script>
+
+    <script src="./emergency.js"></script>
 </body>
 
 </html>
